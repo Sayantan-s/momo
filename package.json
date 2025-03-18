@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "state-observer",
   "private": true,
   "scripts": {
     "build": "turbo run build",
