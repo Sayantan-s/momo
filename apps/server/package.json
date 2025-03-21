@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "module": "index.ts",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "concurrently": "^9.1.2",
+    "socket.io": "^4.8.1",
+    "colorts": "^0.1.63"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "dev": "nodemon dist/index.js",
+    "start:dev": "concurrently \"npm run watch\" \"npm run dev\""
+  }
+}
