@@ -12,10 +12,12 @@
   "scripts": {
     "watch": "tsc --watch",
     "dev": "nodemon dist/index.js",
-    "start:dev": "concurrently \"npm run watch\" \"npm run dev\""
+    "start:dev": "concurrently \"npm run watch\" \"npm run dev\"",
+    "cli": "node dist/index.js"
   },
   "dependencies": {
     "colorts": "^0.1.63",
+    "inquirer": "^12.5.0",
     "socket.io-client": "^4.8.1"
   }
 }
